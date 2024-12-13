@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reaktionen auf Narzissten</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Reaktionen auf Narzissten - Unwissend vs. Wissend</h1>
+    </header>
+    <main>
+        <!-- Unwissende Reaktionen -->
+        <section id="unwissend">
+            <h2>Unwissende Reaktionen</h2>
+            <div class="button-container">
+                <button onclick="showUnwissend(1)">Verunsicherung</button>
+                <button onclick="showUnwissend(2)">Empathie und Schuldgefühle</button>
+                <button onclick="showUnwissend(3)">Kompromissbereitschaft</button>
+                <button onclick="showUnwissend(4)">Unbewusste Anpassung</button>
+                <button onclick="showUnwissend(5)">Erhöhte Leistungsbereitschaft</button>
+                <button onclick="showUnwissend(6)">Wutanfälle</button>
+                <button onclick="showUnwissend(7)">Konfuse Gegenwehr</button>
+                <button onclick="showUnwissend(8)">Überreaktionen</button>
+                <button onclick="showUnwissend(9)">Passiv-aggressives Verhalten</button>
+                <button onclick="showUnwissend(10)">Isolation</button>
+            </div>
+            <div id="unwissend-text" class="reaction-text"></div>
+        </section>
+
+        <!-- Wissende Reaktionen -->
+        <section id="wissend">
+            <h2>Wissende Reaktionen</h2>
+            <div class="button-container">
+                <button onclick="showWissend(1)">Innere Ruhe bewahren</button>
+                <button onclick="showWissend(2)">Nicht rechtfertigen</button>
+                <button onclick="showWissend(3)">Klare Grenzen setzen</button>
+                <button onclick="showWissend(4)">Grauer Fels</button>
+                <button onclick="showWissend(5)">Angriffe ignorieren</button>
+                <button onclick="showWissend(6)">Distanzieren</button>
+                <button onclick="showWissend(7)">Faktenorientiert bleiben</button>
+                <button onclick="showWissend(8)">Keine Erwartungen setzen</button>
+                <button onclick="showWissend(9)">Selbstfürsorge</button>
+                <button onclick="showWissend(10)">Professionelle Hilfe</button>
+            </div>
+            <div id="wissend-text" class="reaction-text"></div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
