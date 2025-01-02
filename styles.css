@@ -1,66 +1,146 @@
+/* Allgemeine Stile */
 body {
-    margin: 0;
     font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #E6F7FF;
+    color: #333333;
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    min-height: 100vh;
 }
 
+/* Header */
 header {
-    background-color: gray;
-    color: white;
-    padding: 10px;
     text-align: center;
+    padding: 20px;
+    background-color: #0099CC;
+    color: white;
 }
 
-main {
+/* Navigation */
+nav {
     display: flex;
-    flex: 1;
+    justify-content: center;
+    margin: 20px 0;
 }
 
-section {
+nav button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    background-color: #004D80;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+nav button:hover {
+    background-color: #0073E6;
+}
+
+/* Hauptinhalt */
+#app-content {
+    padding: 20px;
+    background-color: white;
+    margin: 0 auto;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     flex: 1;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    padding: 20px;
+}
+
+/* Sektionen innerhalb des Hauptinhalts */
+section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+}
+
+/* Spezifische Abschnitte */
+#unwissend, #wissend {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
 }
 
 #unwissend {
     background-color: red;
-    color: white;
 }
 
 #wissend {
     background-color: green;
-    color: white;
 }
 
+/* Button-Container */
 .button-container {
+    display: flex;
+    justify-content: center;
     margin-bottom: 20px;
 }
 
-button {
-    display: block;
-    margin: 5px;
+.button-container button {
+    margin: 0 10px;
     padding: 10px 20px;
-    font-size: 16px;
+    background-color: #004D80;
+    color: white;
     border: none;
-    cursor: pointer;
     border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
 }
 
-button:hover {
-    background-color: rgba(255, 255, 255, 0.2);
+.button-container button:hover {
+    background-color: #0073E6;
 }
 
+/* Textfelder innerhalb der Abschnitte */
 #unwissend-text, #wissend-text {
+    width: 80%;
+    padding: 10px;
     margin-top: 20px;
     font-size: 16px;
-    background: rgba(0, 0, 0, 0.2);
-    padding: 10px;
+    background-color: #F5F5F5;
     border-radius: 5px;
-    width: 80%;
     text-align: center;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #004D80;
+    color: white;
+}
+
+/* Zusätzliche Elemente (falls benötigt) */
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #D9D9D9;
+    font-size: 16px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+}
+
+ul li {
+    margin: 5px 0;
+    padding: 10px;
+    background-color: #F5F5F5;
+    border-radius: 5px;
 }
